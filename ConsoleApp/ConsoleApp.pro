@@ -13,10 +13,12 @@ TEMPLATE = app
 
 
 SOURCES += main.cpp\
-        mainwindow.cpp
+        mainwindow.cpp \
+    nicandriver.cpp
 
 HEADERS  += mainwindow.h \
-    nican.h
+    nican.h \
+    nicandriver.h
 
 FORMS    += mainwindow.ui
 

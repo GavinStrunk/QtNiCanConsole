@@ -2,11 +2,7 @@
 #define MAINWINDOW_H
 
 #include <QMainWindow>
-
-extern "C"
-{
-    #include "nican.h"
-}
+#include "nicandriver.h"
 
 namespace Ui {
 class MainWindow;
@@ -22,6 +18,7 @@ public:
 
 private:
     Ui::MainWindow *ui;
+    NiCanDriver *canObj;
 };
 
 #endif // MAINWINDOW_H
