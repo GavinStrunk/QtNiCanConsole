@@ -15,6 +15,12 @@ TEMPLATE = app
 SOURCES += main.cpp\
         mainwindow.cpp
 
-HEADERS  += mainwindow.h
+HEADERS  += mainwindow.h \
+    nican.h
 
 FORMS    += mainwindow.ui
+
+win32: LIBS += -L$$PWD/./ -lnicanmsc
+
+INCLUDEPATH += $$PWD/.
+DEPENDPATH += $$PWD/.

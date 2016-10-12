@@ -3,6 +3,11 @@
 
 #include <QMainWindow>
 
+extern "C"
+{
+    #include "nican.h"
+}
+
 namespace Ui {
 class MainWindow;
 }
