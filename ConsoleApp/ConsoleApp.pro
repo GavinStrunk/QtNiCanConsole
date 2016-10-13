@@ -22,7 +22,7 @@ HEADERS  += mainwindow.h \
 
 FORMS    += mainwindow.ui
 
-win32: LIBS += -L$$PWD/./ -lnicanmsc
+win32: LIBS += -L$$(NIEXTCCOMPILERSUPP)/Lib32/MSVC/ -lnicanmsc
 
 INCLUDEPATH += $$PWD/.
 DEPENDPATH += $$PWD/.
