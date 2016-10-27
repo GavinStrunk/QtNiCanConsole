@@ -31,9 +31,12 @@ void MainWindow::RefreshInterfaces()
     }
 }
 
-void MainWindow::on_refreshButton_clicked()
+/*********
+ * Slots *
+ *********/
+void MainWindow::on_logButton_clicked()
 {
-    this->RefreshInterfaces();
+
 }
 
 void MainWindow::on_openButton_clicked()
@@ -52,7 +55,14 @@ void MainWindow::on_openButton_clicked()
     }
 }
 
-void MainWindow::on_pushButton_clicked()
+void MainWindow::on_refreshButton_clicked()
+{
+    this->RefreshInterfaces();
+}
+
+void MainWindow::on_sendButton_clicked()
 {
     canObj->Write();
 }
+
+
