@@ -17,10 +17,10 @@ public:
     ~MainWindow();
 
 private slots:
-    void on_refreshButton_clicked();
+    void on_logButton_clicked();
     void on_openButton_clicked();
-
-    void on_pushButton_clicked();
+    void on_refreshButton_clicked();
+    void on_sendButton_clicked();
 
 private:
     Ui::MainWindow *ui;
